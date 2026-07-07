@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /admin/
+
 Sitemap: https://mngcsl.ca/sitemap.xml
+
+# Crawl-delay pour éviter de surcharger le serveur
+Crawl-delay: 2

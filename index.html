@@ -1,26 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr" data-lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFTEX2VSMY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EFTEX2VSMY');
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MNG.CSL — Solutions TI nouvelle génération | Canada</title>
   <meta name="description" content="MNG.CSL (MRMT NEXTGen Conseils & Associés Inc.) — SaaS métiers, intelligence artificielle appliquée, solutions sur mesure, présence web et placement de talents TI. Société canadienne." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F6F7F6'/%3E%3Cpath d='M16 4l2.8 6.6 7.2 1-5.4 5.2L22 24l-6-3.2L10 24l1.4-7.2L6 11.6l7.2-1z' fill='%231D9E75'/%3E%3C/svg%3E" />
+  <!-- ===== FAVICON ==== -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.svg" />
+  
+  <!-- ===== CANONICAL ==== -->
+  <link rel="canonical" href="https://mngcsl.ca/" />
+  
+  <!-- ===== OPEN GRAPH ==== -->
+  <meta property="og:title" content="MNG.CSL — Solutions TI nouvelle génération | Canada" />
+  <meta property="og:description" content="MNG.CSL conçoit, livre et exploite vos plateformes SaaS, votre intelligence artificielle appliquée, vos logiciels sur mesure et votre présence web." />
+  <meta property="og:url" content="https://mngcsl.ca/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mngcsl.ca/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:site_name" content="MNG.CSL" />
+  
+  <!-- ===== TWITTER CARD ==== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MNG.CSL — Solutions TI nouvelle génération | Canada" />
+  <meta name="twitter:description" content="MNG.CSL conçoit, livre et exploite vos plateformes SaaS, votre intelligence artificielle appliquée, vos logiciels sur mesure et votre présence web." />
+  <meta name="twitter:image" content="https://mngcsl.ca/assets/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Logo MNG.CSL - Solutions TI nouvelle génération" />
+  
+  <!-- ===== HREFLANG ==== -->
+  <link rel="alternate" hreflang="fr" href="https://mngcsl.ca/" />
+  <link rel="alternate" hreflang="en" href="https://mngcsl.ca/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://mngcsl.ca/" />
+  
+  <!-- ===== PRECONNECT ==== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://formspree.io" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  
+  <!-- ===== GTM (defer) ==== -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-EFTEX2VSMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EFTEX2VSMY');
+  </script>
+  
+  <!-- ===== SCHEMA.ORG ==== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MNG.CSL",
+    "url": "https://mngcsl.ca",
+    "logo": "https://mngcsl.ca/assets/favicon.svg",
+    "description": "MNG.CSL (MRMT NEXTGen Conseils & Associés Inc.) — cabinet canadien à la croisée du conseil et de l'ingénierie logicielle. SaaS, IA appliquée, solutions sur mesure, web — et bientôt, placement de talents TI.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lévis",
+      "addressRegion": "QC",
+      "addressCountry": "CA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-514-715-1489",
+      "contactType": "customer service",
+      "email": "contact@mngcsl.ca",
+      "availableLanguage": ["French", "English"]
+    },
+    "sameAs": [
+      "https://linkedin.com/company/mngcsl",
+      "https://twitter.com/mngcsl"
+    ],
+    "foundingDate": "2020",
+    "areaServed": "Canada"
+  }
+  </script>
 
+       TOKENS — Light foundation + green confidence accent
+       ==================================================================== */
+    :root {
+=======
   <style>
     /* ====================================================================
+       SKIP LINK (Accessibilité)
+       ==================================================================== */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--accent);
+      color: var(--bg-card);
+      padding: 0.75rem 1.5rem;
+      z-index: 1000;
+      font-weight: 600;
+      border-radius: 0 0 8px 8px;
+      text-decoration: none;
+      transition: left 0.3s ease;
+    }
+    .skip-link:focus {
+      left: 0;
+      outline: 2px solid var(--accent-deep);
+      outline-offset: 2px;
+    }
+
+    /* ====================================================================
+       FOCUS STYLES (Accessibilité)
+       ==================================================================== */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* ====================================================================
+       TOKENS — Light foundation + green confidence accent
+       ==================================================================== */
+    :root {====================================================================
        TOKENS — Light foundation + green confidence accent
        ==================================================================== */
     :root {
@@ -32,7 +133,7 @@
 
       --ink:          #042C53;
       --ink-2:        #475569;
-      --ink-3:        #94A3B8;
+      --ink-3:        #64748B; /* Amélioration contraste (4.5:1 minimum) */
       --ink-onDark:   #F6F7F6;
       --ink-onDark-2: #94A8C2;
 
@@ -1269,6 +1370,11 @@
   </style>
 </head>
 <body>
+  <!-- ===== SKIP TO CONTENT ==== -->
+  <a href="#main" class="skip-link">
+    <span class="lang-fr">Aller au contenu principal</span>
+    <span class="lang-en">Skip to main content</span>
+  </a>
 
   <!-- ============== UTILITY BAR ============== -->
   <div class="utility">
@@ -1331,7 +1437,7 @@
     </div>
   </nav>
 
-  <main id="top">
+  <main id="main">
 
     <!-- ============== HERO ============== -->
     <section class="hero">
@@ -1402,7 +1508,7 @@
       <div class="container">
         <div class="about__inner">
           <div class="about__visual">
-            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80" alt="Équipe MNG.CSL en réunion de travail" loading="lazy" />
             <a href="#" class="about__play" aria-label="Voir la vidéo">
               <span class="about__play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
               <span><span class="lang-fr">Voir la vidéo</span><span class="lang-en">Watch intro</span></span>
@@ -1579,7 +1685,7 @@
 
     <!-- ============== BANNER 1 ============== -->
     <section class="banner banner--1" aria-hidden="true">
-      <div class="container"><div class="banner__img"></div></div>
+      <div class="container"><div class="banner__img" role="img" aria-label="Bannière : Équipe en réunion de travail"></div></div>
     </section>
 
     <!-- ============== CASES ============== -->
@@ -1599,7 +1705,7 @@
 
         <div class="cases__grid">
           <article class="case case--1">
-            <div class="case__img"><span class="case__pill"><span class="dot"></span>Nextmove</span></div>
+            <div class="case__img" role="img" aria-label="Projet Nextmove - Plateforme SaaS pour manufacturier"><span class="case__pill"><span class="dot"></span>Nextmove</span></div>
             <div class="case__body">
               <div class="case__cat"><span class="lang-fr">SaaS · Manufacturier</span><span class="lang-en">SaaS · Manufacturing</span></div>
               <h3 class="case__title">
@@ -1609,7 +1715,7 @@
             </div>
           </article>
           <article class="case case--2">
-            <div class="case__img"><span class="case__pill"><span class="dot"></span>luminous</span></div>
+            <div class="case__img" role="img" aria-label="Projet luminous - Agent IA pour services financiers"><span class="case__pill"><span class="dot"></span>luminous</span></div>
             <div class="case__body">
               <div class="case__cat"><span class="lang-fr">IA · Services financiers</span><span class="lang-en">AI · Financial services</span></div>
               <h3 class="case__title">
@@ -1619,7 +1725,7 @@
             </div>
           </article>
           <article class="case case--3">
-            <div class="case__img"><span class="case__pill"><span class="dot"></span>Sitemark</span></div>
+            <div class="case__img" role="img" aria-label="Projet Sitemark - Modernisation d'un portail de services aux citoyens"><span class="case__pill"><span class="dot"></span>Sitemark</span></div>
             <div class="case__body">
               <div class="case__cat"><span class="lang-fr">Sur mesure · Secteur public</span><span class="lang-en">Bespoke · Public sector</span></div>
               <h3 class="case__title">
@@ -1657,7 +1763,7 @@
             </p>
             <div class="testi-card__foot">
               <div class="testi-card__author">
-                <span class="testi-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80');"></span>
+                <span class="testi-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80');" role="img" aria-label="Photo de Daniel Scott, PDG de Nextmove"></span>
                 <div>
                   <div class="testi-card__name">Daniel Scott</div>
                   <div class="testi-card__role"><span class="lang-fr">PDG · Nextmove</span><span class="lang-en">CEO · Nextmove</span></div>
@@ -1674,7 +1780,7 @@
             </p>
             <div class="testi-card__foot">
               <div class="testi-card__author">
-                <span class="testi-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80');"></span>
+                <span class="testi-card__avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80');" role="img" aria-label="Photo de Leonardo Beard, responsable marketing chez luminous"></span>
                 <div>
                   <div class="testi-card__name">Leonardo Beard</div>
                   <div class="testi-card__role"><span class="lang-fr">Marketing · luminous</span><span class="lang-en">Marketing · luminous</span></div>
@@ -1689,7 +1795,7 @@
 
     <!-- ============== BANNER 2 ============== -->
     <section class="banner banner--2" aria-hidden="true">
-      <div class="container"><div class="banner__img"></div></div>
+      <div class="container"><div class="banner__img" role="img" aria-label="Bannière : Équipe en collaboration"></div></div>
     </section>
 
     <!-- ============== CONTACT ============== -->
@@ -1810,7 +1916,7 @@
 
         <div class="blog__grid">
           <a href="#" class="post post--1">
-            <div class="post__img"><span class="post__badge"><span class="lang-fr">Affaires</span><span class="lang-en">Business</span></span></div>
+            <div class="post__img" role="img" aria-label="Article : Comment choisir la bonne solution TI pour votre entreprise"><span class="post__badge"><span class="lang-fr">Affaires</span><span class="lang-en">Business</span></span></div>
             <div class="post__body">
               <div class="post__meta"><span>20 <span class="lang-fr">juin 2026</span><span class="lang-en">June 2026</span></span><span class="dot"></span><span>5 <span class="lang-fr">min</span><span class="lang-en">min</span></span></div>
               <h3 class="post__title">
@@ -1821,7 +1927,7 @@
           </a>
 
           <a href="#" class="post post--2">
-            <div class="post__img"><span class="post__badge"><span class="lang-fr">Stratégie</span><span class="lang-en">Strategy</span></span></div>
+            <div class="post__img" role="img" aria-label="Article : Pourquoi toute entreprise a besoin d'une stratégie de cybersécurité"><span class="post__badge"><span class="lang-fr">Stratégie</span><span class="lang-en">Strategy</span></span></div>
             <div class="post__body">
               <div class="post__meta"><span>15 <span class="lang-fr">juin 2026</span><span class="lang-en">June 2026</span></span><span class="dot"></span><span>7 <span class="lang-fr">min</span><span class="lang-en">min</span></span></div>
               <h3 class="post__title">
@@ -1832,7 +1938,7 @@
           </a>
 
           <a href="#" class="post post--3">
-            <div class="post__img"><span class="post__badge"><span class="lang-fr">Technologie</span><span class="lang-en">Technology</span></span></div>
+            <div class="post__img" role="img" aria-label="Article : 10 façons dont les services TI améliorent l'efficacité de votre entreprise"><span class="post__badge"><span class="lang-fr">Technologie</span><span class="lang-en">Technology</span></span></div>
             <div class="post__body">
               <div class="post__meta"><span>10 <span class="lang-fr">juin 2026</span><span class="lang-en">June 2026</span></span><span class="dot"></span><span>6 <span class="lang-fr">min</span><span class="lang-en">min</span></span></div>
               <h3 class="post__title">

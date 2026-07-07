@@ -7,27 +7,33 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mngcsl.ca/services</loc>
+    <loc>https://mngcsl.ca/#services</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mngcsl.ca/cases</loc>
+    <loc>https://mngcsl.ca/#cases</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mngcsl.ca/blog</loc>
+    <loc>https://mngcsl.ca/#blog</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mngcsl.ca/contact</loc>
+    <loc>https://mngcsl.ca/#contact</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mngcsl.ca/#top</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
