@@ -1,15 +1,56 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/accueil", "destination": "/", "permanent": true },
+    { "source": "/about", "destination": "/a-propos.html", "permanent": true },
+    { "source": "/about-us", "destination": "/a-propos.html", "permanent": true },
+    { "source": "/services", "destination": "/services.html", "permanent": true },
+    { "source": "/pricing", "destination": "/tarification.html", "permanent": true },
+    { "source": "/prix", "destination": "/tarification.html", "permanent": true },
+    { "source": "/case-studies", "destination": "/realisations.html", "permanent": true },
+    { "source": "/portfolio", "destination": "/realisations.html", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact.html", "permanent": true },
+    { "source": "/careers", "destination": "/carrieres.html", "permanent": true },
+    { "source": "/jobs", "destination": "/carrieres.html", "permanent": true },
+    { "source": "/privacy", "destination": "/confidentialite.html", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/confidentialite.html", "permanent": true },
+    { "source": "/terms", "destination": "/conditions.html", "permanent": true },
+    { "source": "/legal", "destination": "/mentions-legales.html", "permanent": true },
+    { "source": "/accessibility", "destination": "/accessibilite.html", "permanent": true },
+    { "source": "/solutions-sur-mesure.html", "destination": "/services.html#sur-mesure", "permanent": true }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://formspree.io; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://formspree.io https://www.googletagmanager.com https://*.google-analytics.com; upgrade-insecure-requests"
+        },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=()" },
+        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
+        { "key": "X-DNS-Prefetch-Control", "value": "on" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(?:jpg|jpeg|png|gif|webp|svg|ico|woff2)$",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+      ]
     }
   ]
 }
