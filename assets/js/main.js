@@ -14,6 +14,9 @@
     if (lang !== 'fr' && lang !== 'en') lang = 'fr';
     html.setAttribute('data-lang', lang);
     html.setAttribute('lang', lang);
+    // Titre de l'onglet dans la bonne langue (si fourni)
+    var t = html.getAttribute('data-title-' + lang);
+    if (t) document.title = t;
     document.querySelectorAll('.lang-toggle__btn').forEach(function (b) {
       b.classList.toggle('is-active', b.dataset.langSet === lang);
       b.setAttribute('aria-pressed', b.dataset.langSet === lang ? 'true' : 'false');
@@ -62,6 +65,9 @@
 
   /* ============== RÉVÉLATION AU DÉFILEMENT ============== */
   var reveals = document.querySelectorAll('.reveal');
+  function revealAll() {
+    reveals.forEach(function (r) { r.classList.add('is-visible'); });
+  }
   if (reveals.length && 'IntersectionObserver' in window) {
     var revealObs = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
@@ -72,9 +78,24 @@
       });
     }, { threshold: 0.08 });
     reveals.forEach(function (r) { revealObs.observe(r); });
+
+    // Filet 1 — révéler immédiatement tout ce qui est déjà à l'écran ou au-dessus.
+    requestAnimationFrame(function () {
+      reveals.forEach(function (r) {
+        if (r.getBoundingClientRect().top < window.innerHeight) r.classList.add('is-visible');
+      });
+    });
+    // Filet 2 — arrivée sur une ancre (#services, #contact…) : le navigateur saute
+    // par-dessus des sections qui ne passeraient jamais devant l'observateur. On révèle tout.
+    if (window.location.hash) revealAll();
+    window.addEventListener('hashchange', revealAll);
+    // Filet 3 — sécurité absolue : après le chargement, plus rien ne doit rester invisible.
+    window.addEventListener('load', function () { setTimeout(revealAll, 1000); });
   } else {
-    reveals.forEach(function (r) { r.classList.add('is-visible'); });
+    revealAll();
   }
+  // Retour arrière (bfcache) : re-révéler pour éviter tout affichage vide.
+  window.addEventListener('pageshow', function (e) { if (e.persisted) revealAll(); });
 
   /* ============== MENU MOBILE ============== */
   var nav = document.getElementById('nav');
