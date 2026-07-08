@@ -1,9 +1,9 @@
+# robots.txt — MNG.CSL (mngcsl.ca)
 User-agent: *
 Allow: /
-Disallow: /assets/
-Disallow: /*.svg$
-Disallow: /*.ico$
+
+# On autorise explicitement le CSS/JS : Google doit pouvoir rendre les pages.
+Allow: /assets/css/
+Allow: /assets/js/
 
 Sitemap: https://mngcsl.ca/sitemap.xml
-
-Crawl-delay: 2
