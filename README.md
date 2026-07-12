@@ -1,4 +1,4 @@
-# MNG.CSL — Site web
+# MNG — Site web
 
 Site vitrine bilingue (FR/EN) de **MRMT NEXTGen Conseils & Associés Inc.**
 Site statique, sans dépendance de build à l'exécution — prêt pour GitHub + Vercel.

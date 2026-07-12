@@ -1,4 +1,4 @@
-# robots.txt — MNG.CSL (mngcsl.ca)
+# robots.txt — MNG (mngcsl.ca)
 User-agent: *
 Allow: /
 

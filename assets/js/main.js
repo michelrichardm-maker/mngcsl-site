@@ -1,5 +1,5 @@
 /* ====================================================================
-   MNG.CSL — Script global
+   MNG — Script global
    Langue (FR/EN persistée), navigation, révélation au défilement,
    menu mobile, soumission Formspree, filtres blog.
    ==================================================================== */
