@@ -802,7 +802,7 @@
     .case--3 .case__img { background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80'); }
     .case__pill {
       position: absolute;
-      bottom: 0.85rem; left: 0.85rem;
+      top: 0.85rem; left: 0.85rem;
       font-size: 12px;
       font-weight: 600;
       color: var(--ink);
