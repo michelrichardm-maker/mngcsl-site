@@ -1,4 +1,4 @@
-# Logo du site MNG.CSL — mode d'emploi
+# Logo du site MNG — mode d'emploi
 
 Aujourd'hui, le logo dans l'en-tête est un **logotype composé** (une étoile SVG
 verte + le texte « MNG ✦ CSL » + « Conseils & Associés »), directement dans le
