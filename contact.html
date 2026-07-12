@@ -163,17 +163,17 @@
               <div class="form-row">
                 <div class="field">
                   <label for="f-name"><span class="lang-fr">Nom complet</span><span class="lang-en">Full name</span> *</label>
-                  <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required />
+                  <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Votre nom" data-ph-fr="Votre nom" data-ph-en="Your name" required />
                 </div>
                 <div class="field">
                   <label for="f-email">Courriel / Email *</label>
-                  <input id="f-email" name="email" type="email" autocomplete="email" placeholder="vous@entreprise.com" required />
+                  <input id="f-email" name="email" type="email" autocomplete="email" placeholder="vous@entreprise.com" data-ph-fr="vous@entreprise.com" data-ph-en="you@company.com" required />
                 </div>
               </div>
               <div class="form-row">
                 <div class="field">
                   <label for="f-company"><span class="lang-fr">Organisation</span><span class="lang-en">Organization</span></label>
-                  <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Nom de votre organisation" />
+                  <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Nom de votre organisation" data-ph-fr="Nom de votre organisation" data-ph-en="Your organization name" />
                 </div>
                 <div class="field">
                   <label for="f-phone"><span class="lang-fr">Téléphone</span><span class="lang-en">Phone</span></label>
@@ -183,13 +183,13 @@
               <div class="field">
                 <label for="f-service"><span class="lang-fr">Service concerné</span><span class="lang-en">Service of interest</span></label>
                 <select id="f-service" name="service">
-                  <option value=""><span>Choisir un service</span></option>
-                  <option>SaaS Métiers</option>
-                  <option>Solutions sur mesure</option>
-                  <option>Intelligence artificielle</option>
-                  <option>Présence web</option>
-                  <option>Talents TI (Bientôt)</option>
-                  <option>Conseil &amp; stratégie</option>
+                  <option value="" data-txt-fr="Choisir un service" data-txt-en="Choose a service">Choisir un service</option>
+                  <option data-txt-fr="SaaS Métiers" data-txt-en="Business SaaS">SaaS Métiers</option>
+                  <option data-txt-fr="Solutions sur mesure" data-txt-en="Custom software">Solutions sur mesure</option>
+                  <option data-txt-fr="Intelligence artificielle" data-txt-en="Applied AI">Intelligence artificielle</option>
+                  <option data-txt-fr="Présence web" data-txt-en="Web presence">Présence web</option>
+                  <option data-txt-fr="Talents TI (Bientôt)" data-txt-en="IT talent (soon)">Talents TI (Bientôt)</option>
+                  <option data-txt-fr="Conseil &amp; stratégie" data-txt-en="Consulting &amp; strategy">Conseil &amp; stratégie</option>
                 </select>
               </div>
               <div class="field">
@@ -200,12 +200,12 @@
                   <option>10 000 – 50 000 $ CAD</option>
                   <option>50 000 – 150 000 $ CAD</option>
                   <option>&gt; 150 000 $ CAD</option>
-                  <option>À déterminer</option>
+                  <option data-txt-fr="À déterminer" data-txt-en="To be determined">À déterminer</option>
                 </select>
               </div>
               <div class="field">
                 <label for="f-msg">Message *</label>
-                <textarea id="f-msg" name="message" placeholder="Décrivez-nous votre projet, vos objectifs et vos délais…" required></textarea>
+                <textarea id="f-msg" name="message" placeholder="Décrivez-nous votre projet, vos objectifs et vos délais…" data-ph-fr="Décrivez-nous votre projet, vos objectifs et vos délais…" data-ph-en="Tell us about your project, goals and timeline…" required></textarea>
               </div>
               <div class="field" style="flex-direction:row;align-items:flex-start;gap:.6rem">
                 <input id="f-consent" name="consent" type="checkbox" required style="width:auto;margin-top:.25rem" />

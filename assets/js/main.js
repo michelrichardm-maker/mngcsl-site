@@ -21,6 +21,16 @@
       b.classList.toggle('is-active', b.dataset.langSet === lang);
       b.setAttribute('aria-pressed', b.dataset.langSet === lang ? 'true' : 'false');
     });
+    // Attributs traduisibles : placeholders et libellés d'<option> (impossibles à
+    // gérer via des <span> masqués). Bascule pilotée par data-ph-* / data-txt-*.
+    document.querySelectorAll('[data-ph-fr]').forEach(function (el) {
+      var v = el.getAttribute('data-ph-' + lang);
+      if (v !== null) el.setAttribute('placeholder', v);
+    });
+    document.querySelectorAll('[data-txt-fr]').forEach(function (el) {
+      var v = el.getAttribute('data-txt-' + lang);
+      if (v !== null) el.textContent = v;
+    });
   }
   try {
     var stored = localStorage.getItem(STORAGE_KEY);

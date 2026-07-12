@@ -498,32 +498,32 @@
             <div class="form-row">
               <div class="field">
                 <label for="f-name"><span class="lang-fr">Nom complet</span><span class="lang-en">Full name</span></label>
-                <input id="f-name" name="name" type="text" placeholder="Votre nom" required />
+                <input id="f-name" name="name" type="text" placeholder="Votre nom" data-ph-fr="Votre nom" data-ph-en="Your name" required />
               </div>
               <div class="field">
                 <label for="f-email">Email</label>
-                <input id="f-email" name="email" type="email" placeholder="vous@entreprise.com" required />
+                <input id="f-email" name="email" type="email" placeholder="vous@entreprise.com" data-ph-fr="vous@entreprise.com" data-ph-en="you@company.com" required />
               </div>
             </div>
             <div class="field">
               <label for="f-service"><span class="lang-fr">Service</span><span class="lang-en">Service</span></label>
               <select id="f-service" name="service">
-                <option>Choisir un service</option>
-                <option>SaaS Métiers</option>
-                <option>Solutions sur mesure</option>
-                <option>Intelligence artificielle</option>
-                <option>Présence web</option>
-                <option>Talents TI (Bientôt)</option>
-                <option>Conseil &amp; stratégie</option>
+                <option value="" data-txt-fr="Choisir un service" data-txt-en="Choose a service">Choisir un service</option>
+                <option data-txt-fr="SaaS Métiers" data-txt-en="Business SaaS">SaaS Métiers</option>
+                <option data-txt-fr="Solutions sur mesure" data-txt-en="Custom software">Solutions sur mesure</option>
+                <option data-txt-fr="Intelligence artificielle" data-txt-en="Applied AI">Intelligence artificielle</option>
+                <option data-txt-fr="Présence web" data-txt-en="Web presence">Présence web</option>
+                <option data-txt-fr="Talents TI (Bientôt)" data-txt-en="IT talent (soon)">Talents TI (Bientôt)</option>
+                <option data-txt-fr="Conseil &amp; stratégie" data-txt-en="Consulting &amp; strategy">Conseil &amp; stratégie</option>
               </select>
             </div>
             <div class="field">
               <label for="f-subject"><span class="lang-fr">Sujet</span><span class="lang-en">Subject</span></label>
-              <input id="f-subject" name="subject" type="text" placeholder="Sujet de votre demande" />
+              <input id="f-subject" name="subject" type="text" placeholder="Sujet de votre demande" data-ph-fr="Sujet de votre demande" data-ph-en="Subject of your request" />
             </div>
             <div class="field">
               <label for="f-msg">Message</label>
-              <textarea id="f-msg" name="message" placeholder="Décrivez-nous votre projet..." required></textarea>
+              <textarea id="f-msg" name="message" placeholder="Décrivez-nous votre projet..." data-ph-fr="Décrivez-nous votre projet..." data-ph-en="Tell us about your project..." required></textarea>
             </div>
             <button type="submit" class="btn btn--primary form__submit">
               <span class="lang-fr">Envoyer le message</span><span class="lang-en">Send message</span>
@@ -655,8 +655,8 @@
           <div class="nl__form">
             <label class="nl__form-label" for="nl-email"><span class="lang-fr">Abonnez-vous à notre infolettre</span><span class="lang-en">Subscribe to our newsletter</span></label>
             <div class="nl__form-row">
-              <input id="nl-email" type="email" placeholder="Votre adresse email" />
-              <button class="btn btn--primary"><span class="lang-fr">S'abonner</span><span class="lang-en">Subscribe</span> <span class="arrow">→</span></button>
+              <input id="nl-email" type="email" placeholder="Votre adresse email" data-ph-fr="Votre adresse email" data-ph-en="Your email address" />
+              <button type="button" class="btn btn--primary"><span class="lang-fr">S'abonner</span><span class="lang-en">Subscribe</span> <span class="arrow">→</span></button>
             </div>
           </div>
         </div>
