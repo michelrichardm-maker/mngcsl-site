@@ -1166,6 +1166,7 @@
       border-bottom: 1px solid var(--line-onDark);
     }
     .footer__brand .brand { color: var(--ink-onDark); }
+    .footer__brand .brand__sub { display: inline-block; color: var(--ink-onDark-2); border-left-color: var(--line-onDark); }
     .footer__about {
       color: var(--ink-onDark-2);
       font-size: 14px;
