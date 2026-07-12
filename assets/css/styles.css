@@ -808,6 +808,16 @@
     .case--1 .case__img { background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80'); }
     .case--2 .case__img { background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80'); }
     .case--3 .case__img { background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80'); }
+        /* Texture pointillée subtile pour les panneaux décoratifs (évite l'effet "aplat vide") */
+    .deco--dark, .deco--light { position: relative; }
+    .deco--dark::before, .deco--light::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background-image: radial-gradient(circle, var(--dot) 1px, transparent 1.6px);
+      background-size: 20px 20px;
+    }
+    .deco--dark::before  { --dot: rgba(255, 255, 255, 0.09); }
+    .deco--light::before { --dot: rgba(4, 44, 83, 0.07); }
+
     .case__pill {
       position: absolute;
       top: 0.85rem; left: 0.85rem;
