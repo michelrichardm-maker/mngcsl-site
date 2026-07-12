@@ -655,6 +655,8 @@
     .trust { padding: clamp(2rem, 5vw, 3rem) 0; background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .trust__title { text-align: center; color: var(--ink-3); font-size: 12.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; margin: 0 0 1.4rem; }
     .trust__logos { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.1rem; padding: 0; margin: 0; }
+    .trust__logos li { display: flex; flex-direction: column; align-items: center; gap: 0.7rem; }
+    .trust__name { font-size: 13px; font-weight: 600; color: var(--ink-2); letter-spacing: 0.01em; }
     .trust__chip { display: inline-flex; align-items: center; justify-content: center; background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1.6rem; height: 84px; box-shadow: var(--shadow-sm); transition: box-shadow 0.25s ease, transform 0.2s ease; }
     .trust__chip:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
     .trust__chip img { height: 46px; width: auto; border-radius: 5px; display: block; }
